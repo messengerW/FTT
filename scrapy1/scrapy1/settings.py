@@ -17,10 +17,10 @@ NEWSPIDER_MODULE = 'scrapy1.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 
 # USER_AGENT = 'scrapy1 (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3493.3 Safari/537.36'
+# USER_AGENT = ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',]
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -53,9 +53,16 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+
 # DOWNLOADER_MIDDLEWARES = {
 #    'scrapy1.middlewares.Scrapy1DownloaderMiddleware': 543,
 # }
+
+# 使用随机User-Agent
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy1.middlewares.RandomUserAgentMiddlware': 1000,
+}
+
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -69,6 +76,20 @@ ROBOTSTXT_OBEY = True
 #    'scrapy1.pipelines.Scrapy1Pipeline': 300,
 # }
 
+COOKIES_ENABLED = True #禁止cookies,防止被ban
+MYSQL_HOST = 'localhost'				#Mysql连接名
+MYSQL_PORT = 3306						#连接端口号
+MYSQL_USER = 'root'						#Mysql用户名
+MYSQL_PASSWORD = '232624'						#Mysql用户密码
+MYSQL_DBNAME = '433'						#Mysql数据库名
+MYSQL_CHARSET = 'utf8'
+
+# 开通Pipeline
+ITEM_PIPELINES = {
+    #'scrapy1.pipelines.DoubanPipeline': 100,
+    #'scrapy1.pipelines.PlayerPipeline': 200,
+    #'scrapy1.pipelines.ClubPipeline': 100,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -1,5 +1,6 @@
 import json
 import csv
+import pymysql
 
 with open('file/douban.json') as f:
     rownum = 0
