@@ -63,30 +63,34 @@ class ClubItem(scrapy.Item):
 
 class GameItem(scrapy.Item):
 
-    turn = scrapy.Field()                          # 轮次
+    round = scrapy.Field()                         # 轮次
     date = scrapy.Field()                          # 比赛日期
     score = scrapy.Field()                         # 比分
-    goals = scrapy.Field()                         # 进球数
+    goals_total = scrapy.Field()                   # 进球数
+    goals_home = scrapy.Field()                    # 主队进球数
+    goals_away = scrapy.Field()                    # 客队进球数
     possession = scrapy.Field()                    # 控球率
     confrontation_win_rate = scrapy.Field()        # 对抗成功率
-    beat_an_opponent = scrapy.Field()              # 过人
+    dribble = scrapy.Field()                       # 过人
     intercept = scrapy.Field()                     # 抢断数
     mark = scrapy.Field()                          # 球队评分
-    home_and_away = scrapy.Field()                 # 主客场
+    home_or_away = scrapy.Field()                  # 主客场
 
     # 射门相关
-    shot_number = scrapy.Field()                   # 射门数，详细分为 5 类
-    shot_positional = scrapy.Field()               # 阵地战
-    shot_placekick = scrapy.Field()                # 定位球
-    shot_counterattack = scrapy.Field()            # 反击
-    shot_point = scrapy.Field()                    # 点球
-    shot_own = scrapy.Field()                      # 乌龙球
-    shot_on_target = scrapy.Field()                # 射正数
+    shoot_total = scrapy.Field()                   # 射门数，详细分为 5 类
+    shoot_positional = scrapy.Field()              # 阵地战
+    shoot_placekick = scrapy.Field()               # 定位球
+    shoot_counterattack = scrapy.Field()           # 反击
+    penalty = scrapy.Field()                       # 点球
+    own_goal = scrapy.Field()                      # 乌龙球
+    shoot_on_target = scrapy.Field()               # 射正数
 
     # 传球相关
-    passes_number = scrapy.Field()                 # 传球数
-    passes_short = scrapy.Field()                  # 短传
-    passes_long = scrapy.Field()                   # 长传
-    passes_center = scrapy.Field()                 # 传中
-    passes_through = scrapy.Field()                # 直塞
-    passes_completed_rate = scrapy.Field()         # 传球成功率
+    pass_total = scrapy.Field()                    # 传球数
+    pass_short = scrapy.Field()                    # 短传
+    pass_long = scrapy.Field()                     # 长传
+    pass_center = scrapy.Field()                   # 传中
+    pass_through = scrapy.Field()                  # 直塞
+    pass_completed_rate = scrapy.Field()           # 传球成功率
+
+    points = scrapy.Field()                        # 积分
