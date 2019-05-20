@@ -4,29 +4,29 @@ from scrapy1.items import GameItem
 
 
 class GameSpider(scrapy.Spider):
-    name = 'spider_League_Liverpool2'
+    name = 'spider_League_Chelsea2'
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/matches/52454/report.do',
-                  'http://www.tzuqiu.cc/matches/52471/report.do',
-                  'http://www.tzuqiu.cc/matches/52485/report.do',
-                  'http://www.tzuqiu.cc/matches/52506/report.do',
-                  'http://www.tzuqiu.cc/matches/52527/report.do',
-                  'http://www.tzuqiu.cc/matches/52542/report.do',
-                  'http://www.tzuqiu.cc/matches/52560/report.do',
-                  'http://www.tzuqiu.cc/matches/52579/report.do',
-                  'http://www.tzuqiu.cc/matches/52596/report.do',
-                  'http://www.tzuqiu.cc/matches/52612/report.do',
-                  'http://www.tzuqiu.cc/matches/52644/report.do',
-                  'http://www.tzuqiu.cc/matches/52649/report.do',
-                  'http://www.tzuqiu.cc/matches/52687/report.do',
-                  'http://www.tzuqiu.cc/matches/52708/report.do',
-                  'http://www.tzuqiu.cc/matches/52720/report.do',
-                  'http://www.tzuqiu.cc/matches/52747/report.do',
-                  'http://www.tzuqiu.cc/matches/52761/report.do',
-                  'http://www.tzuqiu.cc/matches/52779/report.do',
-                  'http://www.tzuqiu.cc/matches/52805/report.do',
+    start_urls = ['http://www.tzuqiu.cc/matches/52443/report.do',
+                  'http://www.tzuqiu.cc/matches/52461/report.do',
+                  'http://www.tzuqiu.cc/matches/52490/report.do',
+                  'http://www.tzuqiu.cc/matches/52515/report.do',
+                  'http://www.tzuqiu.cc/matches/52533/report.do',
+                  'http://www.tzuqiu.cc/matches/52566/report.do',
+                  'http://www.tzuqiu.cc/matches/52583/report.do',
+                  'http://www.tzuqiu.cc/matches/52599/report.do',
+                  'http://www.tzuqiu.cc/matches/52622/report.do',
+                  'http://www.tzuqiu.cc/matches/52636/report.do',
+                  'http://www.tzuqiu.cc/matches/52667/report.do',
+                  'http://www.tzuqiu.cc/matches/52671/report.do',
+                  'http://www.tzuqiu.cc/matches/52697/report.do',
+                  'http://www.tzuqiu.cc/matches/52724/report.do',
+                  'http://www.tzuqiu.cc/matches/52743/report.do',
+                  'http://www.tzuqiu.cc/matches/52750/report.do',
+                  'http://www.tzuqiu.cc/matches/52777/report.do',
+                  'http://www.tzuqiu.cc/matches/52796/report.do',
+                  'http://www.tzuqiu.cc/matches/52817/report.do',
                   ]
 
     def parse(self, response):

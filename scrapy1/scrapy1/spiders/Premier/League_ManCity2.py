@@ -119,7 +119,7 @@ class GameSpider(scrapy.Spider):
         game_item['mark'] = mark
 
         # 主客场 (手动填写)
-        game_item['home_or_away'] = '主'
+        game_item['home_or_away'] = '客'
 
         # 射门数
         shoot_total = response.xpath(

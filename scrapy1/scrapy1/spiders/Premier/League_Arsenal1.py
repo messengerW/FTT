@@ -2,32 +2,31 @@ import scrapy
 import time
 from scrapy1.items import GameItem
 
-
 class GameSpider(scrapy.Spider):
-    name = 'spider_League_Liverpool2'
+    name = 'spider_League_Arsenal1'
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/matches/52454/report.do',
-                  'http://www.tzuqiu.cc/matches/52471/report.do',
-                  'http://www.tzuqiu.cc/matches/52485/report.do',
-                  'http://www.tzuqiu.cc/matches/52506/report.do',
-                  'http://www.tzuqiu.cc/matches/52527/report.do',
+    start_urls = ['http://www.tzuqiu.cc/matches/52442/report.do',
+                  'http://www.tzuqiu.cc/matches/52459/report.do',
+                  'http://www.tzuqiu.cc/matches/52497/report.do',
+                  'http://www.tzuqiu.cc/matches/52505/report.do',
+                  'http://www.tzuqiu.cc/matches/52519/report.do',
                   'http://www.tzuqiu.cc/matches/52542/report.do',
-                  'http://www.tzuqiu.cc/matches/52560/report.do',
-                  'http://www.tzuqiu.cc/matches/52579/report.do',
-                  'http://www.tzuqiu.cc/matches/52596/report.do',
-                  'http://www.tzuqiu.cc/matches/52612/report.do',
-                  'http://www.tzuqiu.cc/matches/52644/report.do',
-                  'http://www.tzuqiu.cc/matches/52649/report.do',
-                  'http://www.tzuqiu.cc/matches/52687/report.do',
-                  'http://www.tzuqiu.cc/matches/52708/report.do',
-                  'http://www.tzuqiu.cc/matches/52720/report.do',
-                  'http://www.tzuqiu.cc/matches/52747/report.do',
-                  'http://www.tzuqiu.cc/matches/52761/report.do',
-                  'http://www.tzuqiu.cc/matches/52779/report.do',
-                  'http://www.tzuqiu.cc/matches/52805/report.do',
-                  ]
+                  'http://www.tzuqiu.cc/matches/52555/report.do',
+                  'http://www.tzuqiu.cc/matches/52569/report.do',
+                  'http://www.tzuqiu.cc/matches/52592/report.do',
+                  'http://www.tzuqiu.cc/matches/52609/report.do',
+                  'http://www.tzuqiu.cc/matches/52642/report.do',
+                  'http://www.tzuqiu.cc/matches/52667/report.do',
+                  'http://www.tzuqiu.cc/matches/52669/report.do',
+                  'http://www.tzuqiu.cc/matches/52702/report.do',
+                  'http://www.tzuqiu.cc/matches/52711/report.do',
+                  'http://www.tzuqiu.cc/matches/52737/report.do',
+                  'http://www.tzuqiu.cc/matches/52749/report.do',
+                  'http://www.tzuqiu.cc/matches/52782/report.do',
+                  'http://www.tzuqiu.cc/matches/52799/report.do',
+                    ]
 
     def parse(self, response):
 
@@ -60,7 +59,7 @@ class GameSpider(scrapy.Spider):
 
         # 进球
         goals_total = response.xpath(
-            "//div[@id='shotsTab']/div[2]/div[1]/div[3]/span[1]/span[4]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[2]/div[1]/div[3]/span[1]/span[2]/span/text()").extract_first()
         if goals_total:
             goals_total = goals_total.strip()
         else:
@@ -75,7 +74,7 @@ class GameSpider(scrapy.Spider):
 
         # 控球率
         possession = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[2]/div[2]/span[1]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[2]/div[2]/span[1]/span[2]/span/text()").extract_first()
         if possession:
             possession = possession.strip()
         else:
@@ -84,7 +83,7 @@ class GameSpider(scrapy.Spider):
 
         # 对抗成功率
         confrontation_win_rate = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[4]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[4]/span[1]/span/text()").extract_first()
         if confrontation_win_rate:
             confrontation_win_rate = confrontation_win_rate.strip()
         else:
@@ -93,7 +92,7 @@ class GameSpider(scrapy.Spider):
 
         # 过人
         dribble = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[5]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[5]/span[1]/span/text()").extract_first()
         if dribble:
             dribble = dribble.strip()
         else:
@@ -102,7 +101,7 @@ class GameSpider(scrapy.Spider):
 
         # 抢断
         intercept = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[6]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[6]/span[1]/span/text()").extract_first()
         if intercept:
             intercept = intercept.strip()
         else:
@@ -111,7 +110,7 @@ class GameSpider(scrapy.Spider):
 
         # 球队评分
         mark = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[7]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[7]/span[1]/span/text()").extract_first()
         if mark:
             mark = mark.strip()
         else:
@@ -119,11 +118,11 @@ class GameSpider(scrapy.Spider):
         game_item['mark'] = mark
 
         # 主客场 (手动填写)
-        game_item['home_or_away'] = '客'
+        game_item['home_or_away'] = '主'
 
         # 射门数
         shoot_total = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[1]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[1]/span[1]/span/text()").extract_first()
         if shoot_total:
             shoot_total = shoot_total.strip()
         else:
@@ -132,7 +131,7 @@ class GameSpider(scrapy.Spider):
 
         # 阵地战
         shoot_positional = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[2]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[2]/span[1]/span/text()").extract_first()
         if shoot_positional:
             shoot_positional = shoot_positional.strip()
         else:
@@ -141,7 +140,7 @@ class GameSpider(scrapy.Spider):
 
         # 定位球
         shoot_placekick = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[3]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[3]/span[1]/span/text()").extract_first()
         if shoot_placekick:
             shoot_placekick = shoot_placekick.strip()
         else:
@@ -150,7 +149,7 @@ class GameSpider(scrapy.Spider):
 
         # 反击
         shoot_counterattack = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[4]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[4]/span[1]/span/text()").extract_first()
         if shoot_counterattack:
             shoot_counterattack = shoot_counterattack.strip()
         else:
@@ -159,7 +158,7 @@ class GameSpider(scrapy.Spider):
 
         # 点球
         penalty = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[5]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[5]/span[1]/span/text()").extract_first()
         if penalty:
             penalty = penalty.strip()
         else:
@@ -168,7 +167,7 @@ class GameSpider(scrapy.Spider):
 
         # 乌龙球
         own_goal = response.xpath(
-            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[6]/span[3]/span/text()").extract_first()
+            "//div[@id='shotsTab']/div[1]/div[2]/div[2]/div[6]/span[1]/span/text()").extract_first()
         if own_goal:
             own_goal = own_goal.strip()
         else:
@@ -177,7 +176,7 @@ class GameSpider(scrapy.Spider):
 
         # 射正数
         shoot_on_target = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[2]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[2]/span[1]/span/text()").extract_first()
         if shoot_on_target:
             shoot_on_target = shoot_on_target.strip()
         else:
@@ -186,7 +185,7 @@ class GameSpider(scrapy.Spider):
 
         # 传球数
         pass_total = response.xpath(
-            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[1]/span[3]/span/text()").extract_first()
+            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[1]/span[1]/span/text()").extract_first()
         if pass_total:
             pass_total = pass_total.strip()
         else:
@@ -195,7 +194,7 @@ class GameSpider(scrapy.Spider):
 
         # 短传
         pass_short = response.xpath(
-            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[2]/span[3]/span/text()").extract_first()
+            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[2]/span[1]/span/text()").extract_first()
         if pass_short:
             pass_short = pass_short.strip()
         else:
@@ -204,7 +203,7 @@ class GameSpider(scrapy.Spider):
 
         # 长传
         pass_long = response.xpath(
-            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[3]/span[3]/span/text()").extract_first()
+            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[3]/span[1]/span/text()").extract_first()
         if pass_long:
             pass_long = pass_long.strip()
         else:
@@ -213,7 +212,7 @@ class GameSpider(scrapy.Spider):
 
         # 传中
         pass_center = response.xpath(
-            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[4]/span[3]/span/text()").extract_first()
+            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[4]/span[1]/span/text()").extract_first()
         if pass_center:
             pass_center = pass_center.strip()
         else:
@@ -222,7 +221,7 @@ class GameSpider(scrapy.Spider):
 
         # 直塞
         pass_through = response.xpath(
-            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[5]/span[3]/span/text()").extract_first()
+            "//div[@id='passesTab']/div[1]/div[2]/div[2]/div[5]/span[1]/span/text()").extract_first()
         if pass_through:
             pass_through = pass_through.strip()
         else:
@@ -231,7 +230,7 @@ class GameSpider(scrapy.Spider):
 
         # 传球成功率
         pass_completed_rate = response.xpath(
-            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[3]/span[3]/span/text()").extract_first()
+            "//div[@class='sidebar-bkg sidebar-content']/div[1]/div[1]/div[3]/span[1]/span/text()").extract_first()
         if pass_completed_rate:
             pass_completed_rate = pass_completed_rate.strip()
         else:

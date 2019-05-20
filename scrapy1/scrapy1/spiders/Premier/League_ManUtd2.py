@@ -1,33 +1,32 @@
 import scrapy
 import time
+import xlrd
 from scrapy1.items import GameItem
 
 
 class GameSpider(scrapy.Spider):
-    name = 'spider_League_Liverpool2'
+    name = 'spider_League_ManUtd2'
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/matches/52454/report.do',
-                  'http://www.tzuqiu.cc/matches/52471/report.do',
-                  'http://www.tzuqiu.cc/matches/52485/report.do',
-                  'http://www.tzuqiu.cc/matches/52506/report.do',
-                  'http://www.tzuqiu.cc/matches/52527/report.do',
-                  'http://www.tzuqiu.cc/matches/52542/report.do',
-                  'http://www.tzuqiu.cc/matches/52560/report.do',
-                  'http://www.tzuqiu.cc/matches/52579/report.do',
-                  'http://www.tzuqiu.cc/matches/52596/report.do',
-                  'http://www.tzuqiu.cc/matches/52612/report.do',
-                  'http://www.tzuqiu.cc/matches/52644/report.do',
-                  'http://www.tzuqiu.cc/matches/52649/report.do',
-                  'http://www.tzuqiu.cc/matches/52687/report.do',
-                  'http://www.tzuqiu.cc/matches/52708/report.do',
-                  'http://www.tzuqiu.cc/matches/52720/report.do',
-                  'http://www.tzuqiu.cc/matches/52747/report.do',
-                  'http://www.tzuqiu.cc/matches/52761/report.do',
-                  'http://www.tzuqiu.cc/matches/52779/report.do',
-                  'http://www.tzuqiu.cc/matches/52805/report.do',
-                  ]
+    start_urls = []
+
+    # 设置文件名和路径
+    filepath = 'C:/Users/mushr/Desktop/433/urls.xls'
+    # 打开 excel
+    book = xlrd.open_workbook(filepath)
+    # 获取第一个 sheet
+    sheet = book.sheets()[0]
+
+    # 获取表的行数、列数
+    rows_num = sheet.nrows
+    cols_num = sheet.ncols
+    # 从第2行（下标1）开始读取
+    for i_row in range(1, rows_num):
+        url = sheet.row_values(i_row)[1]  # 因为是客场，所以获取excel第二列
+        if url:
+            # print(url)
+            start_urls.append(url)
 
     def parse(self, response):
 

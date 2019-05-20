@@ -4,30 +4,30 @@ from scrapy1.items import GameItem
 
 
 class GameSpider(scrapy.Spider):
-    name = 'spider_League_Liverpool2'
+    name = 'spider_League_Arsenal2'
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/matches/52454/report.do',
-                  'http://www.tzuqiu.cc/matches/52471/report.do',
-                  'http://www.tzuqiu.cc/matches/52485/report.do',
-                  'http://www.tzuqiu.cc/matches/52506/report.do',
-                  'http://www.tzuqiu.cc/matches/52527/report.do',
-                  'http://www.tzuqiu.cc/matches/52542/report.do',
-                  'http://www.tzuqiu.cc/matches/52560/report.do',
-                  'http://www.tzuqiu.cc/matches/52579/report.do',
-                  'http://www.tzuqiu.cc/matches/52596/report.do',
-                  'http://www.tzuqiu.cc/matches/52612/report.do',
-                  'http://www.tzuqiu.cc/matches/52644/report.do',
-                  'http://www.tzuqiu.cc/matches/52649/report.do',
-                  'http://www.tzuqiu.cc/matches/52687/report.do',
-                  'http://www.tzuqiu.cc/matches/52708/report.do',
-                  'http://www.tzuqiu.cc/matches/52720/report.do',
-                  'http://www.tzuqiu.cc/matches/52747/report.do',
-                  'http://www.tzuqiu.cc/matches/52761/report.do',
-                  'http://www.tzuqiu.cc/matches/52779/report.do',
-                  'http://www.tzuqiu.cc/matches/52805/report.do',
-                  ]
+    start_urls = ['http://www.tzuqiu.cc/matches/52450/report.do',
+                  'http://www.tzuqiu.cc/matches/52476/report.do',
+                  'http://www.tzuqiu.cc/matches/52487/report.do',
+                  'http://www.tzuqiu.cc/matches/52510/report.do',
+                  'http://www.tzuqiu.cc/matches/52536/report.do',
+                  'http://www.tzuqiu.cc/matches/52564/report.do',
+                  'http://www.tzuqiu.cc/matches/52586/report.do',
+                  'http://www.tzuqiu.cc/matches/52601/report.do',
+                  'http://www.tzuqiu.cc/matches/52619/report.do',
+                  'http://www.tzuqiu.cc/matches/52637/report.do',
+                  'http://www.tzuqiu.cc/matches/52652/report.do',
+                  'http://www.tzuqiu.cc/matches/52680/report.do',
+                  'http://www.tzuqiu.cc/matches/52690/report.do',
+                  'http://www.tzuqiu.cc/matches/52721/report.do',
+                  'http://www.tzuqiu.cc/matches/52766/report.do',
+                  'http://www.tzuqiu.cc/matches/52772/report.do',
+                  'http://www.tzuqiu.cc/matches/52745/report.do',
+                  'http://www.tzuqiu.cc/matches/52789/report.do',
+                  'http://www.tzuqiu.cc/matches/52816/report.do',
+                    ]
 
     def parse(self, response):
 
@@ -243,3 +243,4 @@ class GameSpider(scrapy.Spider):
 
         time.sleep(3)
         yield game_item
+
