@@ -1,32 +1,40 @@
+# 2019.05.20
+# 做了点修改，每次手动改网址太麻烦，我本来想写一个爬虫类用来爬网址，然后其它爬虫调用它就可以了，
+# 但是试了很多次不行（还是太菜），没办法我就先把爬下来的网址都放到一个excel里面，然后从这个
+# excel里面读取，也可以达到效果，不过还是有点麻烦.
+
+# 这个是通用的，geturl那边获取完url后这边就可以直接爬了 : scrapy crawl spider_League -o ×××.×××
+# 1 的意思是主队，2是客队
+
 import scrapy
 import time
+import xlrd
 from scrapy1.items import GameItem
 
+
 class GameSpider(scrapy.Spider):
-    name = 'spider_League_Arsenal1'
+    name = 'spider_League1'
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/matches/52442/report.do',
-                  'http://www.tzuqiu.cc/matches/52459/report.do',
-                  'http://www.tzuqiu.cc/matches/52497/report.do',
-                  'http://www.tzuqiu.cc/matches/52505/report.do',
-                  'http://www.tzuqiu.cc/matches/52519/report.do',
-                  'http://www.tzuqiu.cc/matches/52542/report.do',
-                  'http://www.tzuqiu.cc/matches/52555/report.do',
-                  'http://www.tzuqiu.cc/matches/52569/report.do',
-                  'http://www.tzuqiu.cc/matches/52592/report.do',
-                  'http://www.tzuqiu.cc/matches/52609/report.do',
-                  'http://www.tzuqiu.cc/matches/52642/report.do',
-                  'http://www.tzuqiu.cc/matches/52667/report.do',
-                  'http://www.tzuqiu.cc/matches/52669/report.do',
-                  'http://www.tzuqiu.cc/matches/52702/report.do',
-                  'http://www.tzuqiu.cc/matches/52711/report.do',
-                  'http://www.tzuqiu.cc/matches/52737/report.do',
-                  'http://www.tzuqiu.cc/matches/52749/report.do',
-                  'http://www.tzuqiu.cc/matches/52782/report.do',
-                  'http://www.tzuqiu.cc/matches/52799/report.do',
-                    ]
+    start_urls = []
+
+    # 设置文件名和路径
+    filepath = 'C:/Users/mushr/Desktop/433/urls.xls'
+    # 打开 excel
+    book = xlrd.open_workbook(filepath)
+    # 获取第一个 sheet
+    sheet = book.sheets()[0]
+
+    # 获取表的行数、列数
+    rows_num = sheet.nrows
+    cols_num = sheet.ncols
+    # 从第2行（下标1）开始读取
+    for i_row in range(1, rows_num):
+        url = sheet.row_values(i_row)[0]  # 主场，所以获取excel第1列
+        if url:
+            # print(url)
+            start_urls.append(url)
 
     def parse(self, response):
 

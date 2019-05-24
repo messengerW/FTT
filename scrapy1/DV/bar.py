@@ -6,4 +6,4 @@ v2 = [10,25,8,60,20,80]
 bar = Bar('柱状图','X 轴与 Y 轴交换')
 bar.add('商家A',attr,v1)  
 bar.add('商家B',attr,v2,is_convert = True)    # is_convert = True:X 轴与 Y 轴交换
-bar.render('bar.png')
+bar.render("C:\\Users\\mushr\\Desktop\\433\\联赛数据\\DVFiles\\barr.html")
