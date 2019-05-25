@@ -15,7 +15,7 @@ class GetUrl(scrapy.Spider):
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/teams/14/fixture.do', ]
+    start_urls = ['http://www.tzuqiu.cc/teams/16/fixture.do', ]
 
     def parse(self, response):
         # 打开一个workbook
@@ -30,7 +30,7 @@ class GetUrl(scrapy.Spider):
 
         # 获取到当前页面 table 下面所有的 tr，存入列表
         tr_list = response.xpath("//table[@class='fiture team-fixture']//tbody[@id='fixture-body']/tr")
-        print("========>>>> %s 一共有 %d 条比赛信息 = " %(mpage_team, len(tr_list)))
+        print("========>>>> %s 一共有 %d 条比赛信息" %(mpage_team, len(tr_list)))
         for i in tr_list:  # 注意这里的 i 可不是数字 而是一个个的 xpath
             # 获取到比赛性质（欧冠、联赛、足总杯...）
             game_properties = i.xpath(".//td[3]/a/@title").extract_first()
@@ -46,25 +46,31 @@ class GetUrl(scrapy.Spider):
                 if home_team == mpage_team:
                     sheet.write(0,0,"英超-"+mpage_team+"-主")
                     sheet.write(tr_list.index(i)+1, 0, next_url)
+                    sheet.col(0).width = 10000       # 设置一下单元格宽度（没什么卵用
                 else:
                     sheet.write(0,1,"英超-"+mpage_team+"-客")
                     sheet.write(tr_list.index(i)+1, 1, next_url)
+                    sheet.col(1).width = 10000
 
             elif game_properties == '欧冠':           # 欧冠赛事
                 if home_team == mpage_team:
                     sheet.write(0,2,"欧冠-"+mpage_team+"-主")
                     sheet.write(tr_list.index(i)+1, 2, next_url)
+                    sheet.col(2).width = 10000
                 else:
                     sheet.write(0,3,"欧冠-"+mpage_team+"-客")
                     sheet.write(tr_list.index(i)+1, 3, next_url)
+                    sheet.col(3).width = 10000
 
             else:                                    # 其他赛事
                 if home_team == mpage_team:
                     sheet.write(0,4,"其他赛事-"+mpage_team+"-主")
                     sheet.write(tr_list.index(i)+1, 4, next_url)
+                    sheet.col(4).width = 10000
                 else:
                     sheet.write(0,5,"其他赛事-"+mpage_team+"-客")
                     sheet.write(tr_list.index(i)+1, 5, next_url)
+                    sheet.col(5).width = 10000
 
         os.remove(filepath)
         wb.save(filepath)
