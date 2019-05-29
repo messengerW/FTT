@@ -14,13 +14,14 @@ class GetUrl(scrapy.Spider):
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/teams/207/fixture.do', ]
+    start_urls = ['http://www.tzuqiu.cc/teams/20/fixture.do', ]
 
     def parse(self, response):
         # 打开一个workbook
         app = xw.App(visible=False, add_book=False)
         wb = app.books.open(filepath)
         sheet = wb.sheets['sheet1']
+        sheet.clear()
 
         # 获取当前页面的球队，即打开的是哪个球队的赛程板
         mpage_team = response.xpath(
@@ -44,18 +45,19 @@ class GetUrl(scrapy.Spider):
             if game_properties == '英超':  # 英超赛事
                 if home_team == mpage_team:
                     sheet.range(1, 1).value = "英超主场"
-                    sheet.range(tr_list.index(i) + 1, 1).value = next_url
+                    # 5.28修改一个bug,此处应该是+2，否则第一条信息会被覆盖
+                    sheet.range(tr_list.index(i) + 2, 1).value = next_url
                 else:
                     sheet.range(1, 2).value = "英超客场"
-                    sheet.range(tr_list.index(i) + 1, 2).value = next_url
+                    sheet.range(tr_list.index(i) + 2, 2).value = next_url
 
             elif game_properties == '欧冠':  # 欧冠赛事
                 if home_team == mpage_team:
                     sheet.range(1, 3).value = "欧冠主场"
-                    sheet.range(tr_list.index(i) + 1, 3).value = next_url
+                    sheet.range(tr_list.index(i) + 2, 3).value = next_url
                 else:
                     sheet.range(1, 4).value = "欧冠客场"
-                    sheet.range(tr_list.index(i) + 1, 4).value = next_url
+                    sheet.range(tr_list.index(i) + 2, 4).value = next_url
 
             else:  # 其他赛事
                 if home_team == mpage_team:
