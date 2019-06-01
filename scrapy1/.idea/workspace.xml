@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/scrapy1$s_douban.coverage" NAME="s_douban Coverage Results" MODIFIED="1556027499728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrapy1$rader.coverage" NAME="rader Coverage Results" MODIFIED="1559211550709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DV" />
+    <SUITE FILE_PATH="coverage/scrapy1$rader.coverage" NAME="rader Coverage Results" MODIFIED="1559290226283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DV" />
     <SUITE FILE_PATH="coverage/scrapy1$douban.coverage" NAME="douban Coverage Results" MODIFIED="1556000812828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy1/spiders" />
     <SUITE FILE_PATH="coverage/scrapy1$learn_xlrd.coverage" NAME="learn_xlrd Coverage Results" MODIFIED="1558361396405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DV" />
     <SUITE FILE_PATH="coverage/scrapy1$test111.coverage" NAME="test111 Coverage Results" MODIFIED="1558345223822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaa" />
@@ -20,6 +20,7 @@
     <SUITE FILE_PATH="coverage/scrapy1$pie.coverage" NAME="pie Coverage Results" MODIFIED="1558263934541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dir" />
     <SUITE FILE_PATH="coverage/scrapy1$bar.coverage" NAME="bar Coverage Results" MODIFIED="1559050921830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DV" />
     <SUITE FILE_PATH="coverage/scrapy1$tieba.coverage" NAME="tieba Coverage Results" MODIFIED="1555935977548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy1/spiders" />
+    <SUITE FILE_PATH="coverage/scrapy1$learn_xlwings.coverage" NAME="learn_xlwings Coverage Results" MODIFIED="1559292791466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DV" />
     <SUITE FILE_PATH="coverage/scrapy1$uuu.coverage" NAME="uuu Coverage Results" MODIFIED="1558325983820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrapy1$learn_selenium.coverage" NAME="learn_selenium Coverage Results" MODIFIED="1556267179927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrapy1$geo.coverage" NAME="geo Coverage Results" MODIFIED="1558264738806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dir" />
@@ -82,7 +83,50 @@
     <option name="OUTPUT_DIRECTORY" value="D:\PyCharm 2017.3.3\scrapy1\exportToHTML" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf>
+      <file leaf-file-name="rader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DV/rader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn_xlwings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DV/learn_xlwings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn_str.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn_str.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="League_GetUrl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League_GetUrl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="71" column="18" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy1/spiders/Premier/League_Liverpool1.py" />
         <option value="$PROJECT_DIR$/msw/pyecharts.py" />
         <option value="$PROJECT_DIR$/msw/te.html" />
         <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
@@ -154,6 +197,7 @@
         <option value="$PROJECT_DIR$/scrapy1/spiders/Premier/League2.py" />
         <option value="$PROJECT_DIR$/scrapy1/spiders/Premier/League_GetUrl.py" />
         <option value="$PROJECT_DIR$/DV/rader.py" />
+        <option value="$PROJECT_DIR$/DV/learn_xlwings.py" />
       </list>
     </option>
   </component>
@@ -215,7 +259,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="DV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="Premier" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -238,33 +315,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
-              <item name="DV" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy1" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-              <item name="premier" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rader">
+  <component name="RunManager" selected="Python.learn_xlwings">
     <configuration name="League_GetUrl" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -335,7 +386,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="learn_xlrd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="learn_xlwings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -348,7 +399,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="scrapy1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DV/learn_xlrd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DV/learn_xlwings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,19 +444,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.learn_xlrd" />
-      <item index="1" class="java.lang.String" itemvalue="Python.bar" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.rader" />
-      <item index="4" class="java.lang.String" itemvalue="Python.League_GetUrl" />
+      <item index="0" class="java.lang.String" itemvalue="Python.bar" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.rader" />
+      <item index="3" class="java.lang.String" itemvalue="Python.League_GetUrl" />
+      <item index="4" class="java.lang.String" itemvalue="Python.learn_xlwings" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rader" />
-        <item index="1" class="java.lang.String" itemvalue="Python.League_GetUrl" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bar" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.learn_xlrd" />
+        <item index="0" class="java.lang.String" itemvalue="Python.learn_xlwings" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rader" />
+        <item index="2" class="java.lang.String" itemvalue="Python.League_GetUrl" />
+        <item index="3" class="java.lang.String" itemvalue="Python.bar" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -439,17 +490,17 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31547618" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3050756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31047517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992674" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992674" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -482,20 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/python3.6/Lib/site-packages/xlrd/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/xlrd/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4944">
-          <caret line="696" column="8" lean-forward="false" selection-start-line="696" selection-start-column="8" selection-end-line="696" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python3.6/Lib/site-packages/xlwings/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -541,20 +578,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/10053113/6a80e488-f31e-40f6-b888-ec303a626534/433.club">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/10053113/6a80e488-f31e-40f6-b888-ec303a626534/433.game">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/10053113/6a80e488-f31e-40f6-b888-ec303a626534/433.club" />
+    <entry file="das://table:/10053113/6a80e488-f31e-40f6-b888-ec303a626534/433.game" />
     <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League_GetUrls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -582,41 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League_GetUrl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#221#234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DV/rader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#235#248#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,7 +621,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +631,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +641,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +651,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +661,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +671,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +681,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +691,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-171">
           <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +701,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,32 +711,11 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Burnley2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-206">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Cardiff1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-1298">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file/premier/Burnley2.csv" />
+    <entry file="file://$PROJECT_DIR$/file/premier/Cardiff1.csv" />
     <entry file="file://$PROJECT_DIR$/file/premier/Cardiff2.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -759,54 +723,13 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Crystal2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-206">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Everton1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-178">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Fulham2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-766">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Hafeisierde1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-738">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file/premier/Crystal2.csv" />
+    <entry file="file://$PROJECT_DIR$/file/premier/Everton1.csv" />
+    <entry file="file://$PROJECT_DIR$/file/premier/Fulham2.csv" />
+    <entry file="file://$PROJECT_DIR$/file/premier/Hafeisierde1.csv" />
     <entry file="file://$PROJECT_DIR$/file/premier/Leicester1.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -814,7 +737,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +747,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +757,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +767,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +777,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +787,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +797,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +807,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +817,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +827,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +837,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +847,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,29 +857,50 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-31">
           <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/premier/Watford1.csv" />
+    <entry file="file://$PROJECT_DIR$/file/premier/Newcastle2.csv" />
+    <entry file="file://$PROJECT_DIR$/DV/rader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Watford1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="46">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+    <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/premier/Newcastle2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-738">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/scrapy1/spiders/Premier/League_GetUrl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="71" column="18" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_str.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DV/learn_xlwings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
