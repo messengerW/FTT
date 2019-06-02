@@ -14,7 +14,7 @@ class GetUrl(scrapy.Spider):
 
     allowed_domains = ['tzuqiu.cc']
 
-    start_urls = ['http://www.tzuqiu.cc/teams/278/fixture.do', ]
+    start_urls = ['http://www.tzuqiu.cc/teams/207/fixture.do', ]
 
     def parse(self, response):
         # 打开一个workbook
@@ -68,5 +68,4 @@ class GetUrl(scrapy.Spider):
                     sheet.range(tr_list.index(i) + 1, 6).value = next_url
 
         wb.save()
-        wb.close()
-        app.quit()
+        app.kill()
