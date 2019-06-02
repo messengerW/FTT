@@ -1,5 +1,4 @@
 import xlwings as xw
-import string
 
 filepath = "C:/Users/mushr/Desktop/433/联赛数据/前锋.xlsx"
 

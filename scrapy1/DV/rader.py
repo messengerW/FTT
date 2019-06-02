@@ -1,8 +1,35 @@
 from pyecharts import Radar
+import xlwings as xw
 
+filepath = "C:/Users/mushr/Desktop/433/联赛数据/前锋.xlsx"
+
+app = xw.App(visible=False, add_book=False)
+app.display_alerts = False
+app.screen_updating = False
+book = app.books.open(filepath)
+sheet = book.sheets['sheet1']
+
+data1 = sheet.range('G2:P2').value  # 第一串数据
+data2 = sheet.range('G3:P3').value  # 第二串数据
+
+_list1 = []
+_list2 = []
+i = 0
+j = 0
+
+print(data1)
 radar = Radar("雷达图", "球员能力值")
-radar_data1 = [[2926, 16, 15, 84.3, 18, 0.5, 14, 7.81]]
-radar_data2 = [[2444, 13, 10, 85.8, 11, 0.4, 8, 7.61]]
+k = 0
+for itemm in data1:
+    print("%d : %s" % (k, itemm))
+    k = k + 1
+for item in data1:
+    print(item)
+    _list1[j] = item
+    j = j + 1
+
+radar_data1 = [_list1]
+radar_data2 = [_list2]
 schema = [
     ("出场时间(minutes)", 3500),
     ("进球", 30),
