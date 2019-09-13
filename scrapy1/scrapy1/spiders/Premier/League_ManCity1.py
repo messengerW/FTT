@@ -7,7 +7,7 @@
 
 import scrapy
 import time
-from scrapy1.items import GameItem
+from scrapy1.scrapy1.items import GameItem
 
 class GameSpider(scrapy.Spider):
     name = 'spider_League_ManCity1'

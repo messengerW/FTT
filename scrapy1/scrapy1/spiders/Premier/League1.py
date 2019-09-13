@@ -9,7 +9,7 @@
 import scrapy
 import time
 import xlrd
-from scrapy1.items import GameItem
+from scrapy1.scrapy1.items import GameItem
 
 
 class GameSpider(scrapy.Spider):

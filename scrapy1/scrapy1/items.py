@@ -47,6 +47,19 @@ class PlayerItem(scrapy.Item):
     games = scrapy.Field()
     goals = scrapy.Field()
 
+# 球员，2019-2020赛季
+class Test1Item(scrapy.Item):
+    name = scrapy.Field()
+
+# 球队，2019-2020赛季
+class Test2Item(scrapy.Item):
+    shoot_total = scrapy.Field()                # 射门数
+    possession = scrapy.Field()                 # 控球率
+    pass_completed_rate = scrapy.Field()        # 传球成功率
+    intercept = scrapy.Field()                  # 抢断
+    clearance_kick = scrapy.Field()             # 解围
+    mark = scrapy.Field()                       # 评分
+
 
 class ClubItem(scrapy.Item):
     rank = scrapy.Field()
